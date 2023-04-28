@@ -16,5 +16,8 @@ A tool script for managing wifi networks on the Miyoo Mini Plus
 
 ## Usage
 
+Copy the App to the App folder on your SD
+Browse to the Wifitools app and run
+or
 Copy the wifitools.sh script to your MMP to a known location
 With either putty or the built in app (terminal on Onion os) start the script with sh wifitools.sh
