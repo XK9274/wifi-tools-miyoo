@@ -14,7 +14,17 @@ A tool script for managing wifi networks on the Miyoo Mini Plus
 9. Reset wpa_supplicant.conf -							Completely deletes all stored networks - Removes all ID's
 0. Exit script - quits
 
+
+
+![Wifitools_000](https://user-images.githubusercontent.com/47260768/235262864-010cf3c4-70da-470d-8e02-b799f6f418a0.png)
+![MainUI_003](https://user-images.githubusercontent.com/47260768/235262874-0f999a7a-1a48-42d3-8cab-6eb33c3e9101.png)
+
 ## Usage
 
+Copy the Wifitools folder to the App folder on your SD
+Browse to the Wifitools app and run
+or
 Copy the wifitools.sh script to your MMP to a known location
 With either putty or the built in app (terminal on Onion os) start the script with sh wifitools.sh
+
+Logo from pngtree.com
