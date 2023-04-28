@@ -88,6 +88,7 @@ while true; do
 			echo "Initiating WPS connection to $selected_bssid using $wps_method..."
 			$wpa_cli/wpa_cli $wps_method $selected_bssid
 			
+			
 			echo "Waiting for connection..."
 			
 			sleep 5
@@ -100,7 +101,7 @@ while true; do
 			
 		elif [ "$wps_choice" -eq 2 ]; then
 			wps_method="wps_pin"
-			read -p "What is your WPS Pin?" wpspin
+			read -p "What is your WPS Pin?" wps_pin
 			echo "Scanning for available Wi-Fi networks..."
 			$wpa_cli/wpa_cli scan
 			networkswps=$(echo "$($wpa_cli/wpa_cli scan_results | tail -n+3)" | awk '{print $NF " " $1}' | sed 's/\[.*\]//g')
