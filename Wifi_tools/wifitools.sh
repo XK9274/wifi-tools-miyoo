@@ -72,7 +72,8 @@ while true; do
 			wps_method="wps_pbc"
 			echo "Scanning for available Wi-Fi networks..."
 			$wpa_cli/wpa_cli scan
-			networkswps=$($wpa_cli/wpa_cli scan_results | tail -n+3 | awk '{print $NF " " $1}' | sed 's/\[.*\]//g') & 
+			sleep 1
+			networkswps=$(echo "$($wpa_cli/wpa_cli scan_results | tail -n+3)" | awk '{print $NF " " $1}' | sed 's/\[.*\]//g')
 			wait $!
 
 			echo "Available networks:"
@@ -89,7 +90,7 @@ while true; do
 			
 			echo "Waiting for connection..."
 			
-			sleep 15
+			sleep 5
 			IP=$(ip route get 1 | awk '{print $NF;exit}')
 			if [ -z "$IP" ]; then
 				echo -e "\nUnable to connect to the network."
@@ -102,7 +103,7 @@ while true; do
 			read -p "What is your WPS Pin?" wpspin
 			echo "Scanning for available Wi-Fi networks..."
 			$wpa_cli/wpa_cli scan
-			networkswps=$($wpa_cli/wpa_cli scan_results | tail -n+3 | awk '{print $NF " " $1}' | sed 's/\[.*\]//g')
+			networkswps=$(echo "$($wpa_cli/wpa_cli scan_results | tail -n+3)" | awk '{print $NF " " $1}' | sed 's/\[.*\]//g')
 
 			echo "Available networks:"
 			echo ""
