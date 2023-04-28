@@ -139,7 +139,7 @@ while true; do
 	elif [ "$method_choice" -eq 4 ]; then # Show local scan
 		echo -e "\n"
 		$wpa_cli/wpa_cli scan
-		$wpa_cli/wpa_cli scan_results
+		echo "$($wpa_cli/wpa_cli scan_results | tail -n+3)" | awk '{print $NF " " $1}' | sed 's/\[.*\]//g'
 		echo -e "\nPress start to continue..."
 		read -n 1 -s
 
