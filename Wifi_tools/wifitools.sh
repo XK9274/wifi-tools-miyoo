@@ -10,10 +10,13 @@ while true; do
 	echo "2. WPS connection (Wps button connection)"
 	echo "3. Get status (Lists status of connected networks)"
 	echo "4. Scan networks (Shows all networks nearby)"
-	echo "5. Show networks configured in wpa_supplicant.conf"
-	echo "6. Store a network in wpa_supplicant.conf"
-	echo "7. Connect to stored network in wpa_supplicant.conf"
-	echo "8. Remove a network from wpa_supplicant.conf"
+	
+	echo -e "\n wpa_supplicant.conf file management\n"
+	
+	echo "5. Show networks configured"
+	echo "6. Store a network"
+	echo "7. Connect to stored network"
+	echo "8. Remove a network"
 	echo "9. Reset wpa_supplicant.conf"
 	echo "0. Exit script"
 	echo -e "\n"
