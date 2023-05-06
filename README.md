@@ -16,7 +16,7 @@ A tool script for managing wifi networks on the Miyoo Mini Plus
 
 
 
-![Wifitools_000](https://user-images.githubusercontent.com/47260768/235262864-010cf3c4-70da-470d-8e02-b799f6f418a0.png)
+![Wifi_tools_001](https://user-images.githubusercontent.com/47260768/236643458-86f9faed-4522-4afb-9972-57474f6f640a.png)
 ![MainUI_004](https://user-images.githubusercontent.com/47260768/235266020-7bcca519-265e-410f-bc6a-3e8ac3960f3d.png)
 
 
