@@ -6,17 +6,29 @@ A tool script for managing wifi networks on the Miyoo Mini Plus
 ## Controls
 
 "How to use:\n"
+
 "  ARROWS: select key from keyboard\n"
+
 "  A:  press key\n"
+
 "  B:  toggle key (useful for shift/ctrl...)\n"
+
 "  L1: shift\n"
+
 "  R1: backspace\n"
+
 "  Y:  change keyboard location (top/bottom)\n"
+
 "  X:  show / hide keyboard\n"
+
 "  START:    enter\n"
+
 "  SELECT:   tab\n"
+
 "  L2:       left\n"
+
 "  R2:       right\n"
+
 "  MENU:     quit\n\n"
 
 ## Menus
