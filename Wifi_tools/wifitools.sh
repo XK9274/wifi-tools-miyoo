@@ -1,3 +1,7 @@
+miyoodir=/mnt/SDCARD/miyoo
+wpa_cli=/customer/app
+export LD_LIBRARY_PATH="/config/lib:$miyoodir/lib:$sysdir/lib:$sysdir/lib/parasyte"
+
 while true; do
 	echo -e "Wifi Tools for MMP+\n"
 
