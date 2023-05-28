@@ -1,6 +1,8 @@
 # wifi-tools-miyoo
 A tool script for managing wifi networks on the Miyoo Mini Plus
 
+# New version here: https://github.com/XK9274/better-wifi-miyoo
+
 ## Boots the script in the simple terminal app included in OnionOS
 
 ## Controls
